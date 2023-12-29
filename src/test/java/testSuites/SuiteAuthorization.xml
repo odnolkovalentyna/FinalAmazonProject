@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteAuthorization" >
+
+
+    <listeners>
+        <listener class-name="listeners.ProjectListener"/>
+    </listeners>
+
+    <test name = "Authorization with correct data">
+        <classes>
+            <class name="authorizationTests.TestAuthorizationWithCorrectData"/>
+        </classes>
+    </test>
+    <test name = "Check validation errors for incorrect email">
+        <classes>
+            <class name="authorizationTests.TestAuthorizationWithIncorrectEmail"/>
+        </classes>
+    </test>
+    <test name = "Check validation errors for incorrect password">
+        <classes>
+            <class name="authorizationTests.TestAuthorizationWithIncorrectPassword"/>
+        </classes>
+    </test>
+
+</suite>
